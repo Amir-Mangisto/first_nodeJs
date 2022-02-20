@@ -101,5 +101,9 @@ let randomNames = ["amir", "dan", "ben", "tal", "yakov"];
 // event12.emitListenFile("event12","Oshri is my friend")
 
 //13
-const event13 = require('./events13.js')
-event13.emitNamesArray("amir","oshri","eli")
+// const event13 = require('./events13.js')
+// event13.emitNamesArray("amir","oshri","eli")
+
+//14
+const event14 = require('./events14.js')
+event14.emitNumbersArray([15,236,98,84,486,886,987])

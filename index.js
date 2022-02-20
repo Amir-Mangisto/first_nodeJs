@@ -1,5 +1,4 @@
 const fs = require("fs");
-const EventEmitter  = require("events")
 // fs.writeFile('./files.txt',"this is write file",()=>{})
 
 // fs.readFile('./files.txt',(err,result)=>{console.log(result.toString());})
@@ -74,13 +73,12 @@ let randomNames = ["amir", "dan", "ben", "tal", "yakov"];
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-class myEvent extends EventEmitter {};
+const myEvent = require('./myEvent.js')
+// myEvent.onPrint();
+// myEvent.emitPrint("shalom")
 
-const theEvent = new myEvent();
+// myEvent.onDoNow();
+// myEvent.emitDoNow("amir")
 
-theEvent.on('hello',(data)=>{
-    // console.log("hello world")
-    console.log(data);
-})
-
-theEvent.emit('hello',"abc")
+myEvent.onPrintNames();
+myEvent.emitPrintNames('hello there' )

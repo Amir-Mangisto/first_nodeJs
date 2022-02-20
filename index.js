@@ -73,12 +73,31 @@ let randomNames = ["amir", "dan", "ben", "tal", "yakov"];
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const myEvent = require('./myEvent.js')
+// const myEvent = require('./myEvent.js')
 // myEvent.onPrint();
 // myEvent.emitPrint("shalom")
 
 // myEvent.onDoNow();
 // myEvent.emitDoNow("amir")
 
-myEvent.onPrintNames();
-myEvent.emitPrintNames('hello there' )
+// myEvent.onPrintNames();
+// myEvent.emitPrintNames('hello there' )
+
+/////////////////////////////////////////
+//10
+
+// const event10 = require('./events10.js');
+
+// event10.emitPrintListen('printListen');
+
+//11
+// const event11 = require('./events11.js');
+
+// event11.emitFilePrint('filePrint',"ex11file")
+
+// //12
+// const event12 = require('./events12.js')
+
+// event12.emitListenFile("event12","Oshri is my friend")
+
+//13
